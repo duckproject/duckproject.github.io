@@ -1,0 +1,7 @@
+El mono te mira asustado
+
+<slideOptions>
+    <option type="goTo" slide="gameOver">Enculas al mono</option>
+    <option type="goTo" slide="start">Me voy atras</option>
+    <option type="goTo" slide="monkeyDown">Levantas el brazo</option>
+</slideOptions>

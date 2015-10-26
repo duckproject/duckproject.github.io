@@ -13,15 +13,26 @@
 
 
 
-    sliderService.download(1).then(function(data){
+    sliderService.download('start').then(function(data){
       $scope.current = data;
     })
 
-    $scope.goTo = function(slideId) {
-      sliderService.download(slideId).then(function(data){
+
+    $scope.doOption = function(option) {
+
+      switch(option.type) {
+        case 'goTo':
+          return _goTo(option.slide);
+      }
+
+    };
+
+
+    function _goTo(slideId) {
+      return sliderService.download(slideId).then(function(data){
         $scope.current = data;
       })
-    };
+    }
   }
 
 })(angular);
