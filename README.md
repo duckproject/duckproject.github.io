@@ -67,3 +67,38 @@ La sección esta conformada de la siguiente manera
 
 Transición sencilla, en el atributo `slide` pon el nombre de la slide donde quieres transicionar sin la extensión de archivo ".slide"
 
+
+
+## Github
+
+Para poder contribuir en este proyecto debes poseer una cuenta de github, tras ello solicitar permisos en el proyecto, para ello ponte en contacto conmigo a través de la issue https://github.com/duckproject/duckproject.github.io/issues/1.
+
+Una vez tengais permisos sobre el repositorio, seguir las instrucciones a continuación
+
+### Crear una nueva slide
+
+#### 1.
+Posicionarse en el directorio y pulsar el botón más.
+![image](https://cloud.githubusercontent.com/assets/13250982/10727487/924b95fe-7bda-11e5-901c-3f724ce71eb6.png)
+
+#### 2.
+Escribe el nombre de la slide que quieres crear, introduce a su vez el texto que deseas (Recuerda que el nombre tiene que acabar en .slide)
+
+Para mas facilildad recomiendo copiar / pegar lo siguiente
+
+```
+Texto
+
+<slideOptions>
+    <option type="goTo" slide="">Texto de la opción</option>
+</slideOptions>
+```
+
+![image](https://cloud.githubusercontent.com/assets/13250982/10727557/06475c04-7bdb-11e5-9152-eb9ca8846f33.png)
+
+
+#### 3. 
+Pulsar en el boton `commit new file` no rellenar nada adicional ni cambiar el radio button.
+
+![image](https://cloud.githubusercontent.com/assets/13250982/10727565/25676624-7bdb-11e5-9f91-035b2e74755c.png)
+
