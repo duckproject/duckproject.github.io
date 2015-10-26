@@ -8,20 +8,62 @@ Actualmente el juego se ccompone de distintas pantallas "slides" que van alterna
 
 ## Creación de slides
 
-Todas las slides son almacenadas en la carpeta ["slides"](https://github.com/duckproject/duckproject.github.io/tree/master/sliders), se les puede establecer cualquier nombre siempre y guando no disponga de espacioes ni simbolos extraños (Solo se permiten caracteres alfanumericos). A su vez debe acabar con la extensión .slide.
+```
+## Bienvenido al maravilloso juego este
+### Hola que tal estas??
+
+Quiero hacer una serie de pruebas asi que...
+- Sientete libre
+
+![](https://s-media-cache-ak0.pinimg.com/736x/a1/e3/6b/a1e36bcb8ce179bd8cc8db28ff4ef6fb.jpg)
+
+<slideOptions>
+    <option type="goTo" slide="gameOver">Pues me suicido</option>
+    <option type="goTo" slide="step2">Me rasco los huevos</option>
+    <option type="goTo" slide="step2">Me saco un moco</option>
+</slideOptions>
+```
+> Ejemplo de slide
+
+
+Todas las slides son almacenadas en la carpeta ["slides"](https://github.com/duckproject/duckproject.github.io/tree/master/slidess), se les puede establecer cualquier nombre usando unicamente caracteres alfanumericos, debe acabar con la extensión .slide.
 
 Cada slide posee dos areas diferenciadas
 
 ###Texto de la slide
 
-Usando HTML o bien markdown puedes escribir el texto que aparecerá en la pantalla
+Es todo el texto que aparece antes del elemento `<slideOptions>`.
+
+Para su edición puedes usar [markdown](https://guides.github.com/features/mastering-markdown/) o HTLM 
 
 ###Opciones
 
 Semi sección xml con las posibles opciones de la slide.
 
+```
+<slideOptions>
+    <option type="goTo" slide="gameOver">Pues me suicido</option>
+    <option type="goTo" slide="step2">Me rasco los huevos</option>
+    <option type="goTo" slide="step2">Me saco un moco</option>
+</slideOptions>
+```
+>Ejemplo de opciones de slide
+
+La sección esta conformada de la siguiente manera
+- `<slideOptions>` y  `</slideOptions>` Deben encerrar todas las posibles opciones
+- Cada opcion debee tener el formato: `<option type={{optionType}} {{moreAttrs}}>{{optionText}}</option>`
+- El atributo type indica de que tipo es la opción
+- Dependiendo del tipo, pueden existir atributos adicionales.
+- En optionText se escribe el texto que aparecerá en la opción.
+
+
 ## Opciones posibles
 
-###goTo
-Transición sencilla, en el atributo slide pon el nombre de la slide donde quieres transicionar sin la extensión de archivo ".slide"
+### goTo
+
+```
+<option type="goTo" slide="gameOver">Pues me suicido</option>
+```
+
+Transición sencilla, en el atributo `slide` pon el nombre de la slide donde quieres transicionar sin la extensión de archivo ".slide"
 
