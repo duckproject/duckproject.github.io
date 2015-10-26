@@ -1,7 +1,7 @@
 (function(ng){
   'use strict';
 
-  var SERVICE_NAME = 'sliderService';
+  var SERVICE_NAME = 'slidesService';
 
 
   ng.module('mainApp').service(SERVICE_NAME, [ '$log',
@@ -16,7 +16,7 @@
     $this.download = function(slideId) {
 
       var sp = $http({
-        'url' : '/sliders/' + slideId + '.slide',
+        'url' : '/slides/' + slideId + '.slide',
         'method': 'GET'
       });
 

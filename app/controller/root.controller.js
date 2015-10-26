@@ -3,17 +3,17 @@
   var CONTROLLER_NAME = 'mainApp.root.controller';
 
   ng.module('mainApp').controller(CONTROLLER_NAME, [
-    '$log', '$scope', 'sliderService', _controller
+    '$log', '$scope', 'slidesService', _controller
   ]);
 
 
-  function _controller($log, $scope, sliderService) {
+  function _controller($log, $scope, slidesService) {
 
     $scope.current = null;
 
 
 
-    sliderService.download('start').then(function(data){
+    slidesService.download('start').then(function(data){
       $scope.current = data;
     })
 
@@ -29,7 +29,7 @@
 
 
     function _goTo(slideId) {
-      return sliderService.download(slideId).then(function(data){
+      return slidesService.download(slideId).then(function(data){
         $scope.current = data;
       })
     }
