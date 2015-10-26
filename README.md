@@ -77,12 +77,11 @@ Una vez tengais permisos sobre el repositorio, seguir las instrucciones a contin
 
 ### Crear una nueva slide
 
-#### 1.
-Posicionarse en el directorio y pulsar el botón más.
+#### 1. Posicionarse en el directorio y pulsar el botón más.
 ![image](https://cloud.githubusercontent.com/assets/13250982/10727487/924b95fe-7bda-11e5-901c-3f724ce71eb6.png)
 
-#### 2.
-Escribe el nombre de la slide que quieres crear, introduce a su vez el texto que deseas (Recuerda que el nombre tiene que acabar en .slide)
+#### 2. Escribe el nombre y texto de la slide
+Recuerda que el nombre tiene que acabar en .slide
 
 Para mas facilildad recomiendo copiar / pegar lo siguiente
 
@@ -97,8 +96,17 @@ Texto
 ![image](https://cloud.githubusercontent.com/assets/13250982/10727557/06475c04-7bdb-11e5-9152-eb9ca8846f33.png)
 
 
-#### 3. 
-Pulsar en el boton `commit new file` no rellenar nada adicional ni cambiar el radio button.
+#### 3. Pulsar en el boton `commit new file` 
+No rellenar nada adicional ni cambiar el radio button.
 
 ![image](https://cloud.githubusercontent.com/assets/13250982/10727565/25676624-7bdb-11e5-9f91-035b2e74755c.png)
 
+### Editar una slide
+
+#### 1. Accede a la slide y pulsa en el botón editar
+![image](https://cloud.githubusercontent.com/assets/13250982/10727601/5afd0b40-7bdb-11e5-9a08-24d2314a8c32.png)
+
+#### 2. Realiza los cambios
+
+#### 3. Pulsa al boton `commit changes`
+No rellenes nada adicional
